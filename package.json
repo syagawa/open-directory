@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/syagawa/open-directory/issues"
   },
-  "homepage": "https://github.com/syagawa/open-directory#readme"
+  "homepage": "https://github.com/syagawa/open-directory#readme",
+  "dependencies": {
+    "yargs": "^17.3.1"
+  }
 }

@@ -9,10 +9,11 @@ const os = getOs();
 
 const run = async function(arg){
   const dir = arg.dir || "./";
-  await openDirectory({ dir: dir, os: os })
+  const result = await openDirectory({ dir: dir, os: os })
     .catch(function(err){
       console.log(err);
     });
+
 };
 
 run(argv);

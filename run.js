@@ -7,13 +7,13 @@ const argv = yargs(hideBin(process.argv)).argv;
 
 const os = getOs();
 
-const run = async function(dir){
+const run = async function({dir, command}){
   dir = dir || "./";
-  const result = await openDirectory({ dir: dir, os: os })
+  const result = await openDirectory({ dir: dir, os: os, command: command })
     .catch(function(err){
       console.log(err);
     });
 
 };
 
-run(argv.dir);
+run({dir: argv.dir, command: argv.cmd });

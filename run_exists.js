@@ -12,7 +12,11 @@ const run = async function({command}){
     .catch(function(err){
       console.log(err);
     });
-  console.log(result);
+  if(result){
+    console.log("exitsts!!!");
+  }else{
+    console.log("not exitsts!");
+  }
 };
 
 run({command: argv.cmd });

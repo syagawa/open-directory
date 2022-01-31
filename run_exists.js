@@ -20,3 +20,4 @@ const run = async function({command}){
 };
 
 run({command: argv.cmd });
+
